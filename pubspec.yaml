@@ -1,0 +1,46 @@
+name: gastocontrol
+description: GastoControl - app academica de control de gastos personales (Flutter + GetX + Firebase).
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.3
+  # GetX: estado reactivo (Rx/Obx), inyeccion de dependencias (Get.put/find) y snackbars.
+  get: ^4.6.6
+  # Firebase
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+  firebase_messaging: ^15.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # Tipografias originales del prototipo: Outfit (titulos) e Inter (texto).
+  # OPCIONAL: si descargas los .ttf y los colocas en assets/fonts/, quita el
+  # "#" de las lineas siguientes. Sin ellas la app usa la fuente por defecto.
+  #
+  # fonts:
+  #   - family: Outfit
+  #     fonts:
+  #       - asset: assets/fonts/Outfit-Regular.ttf
+  #       - asset: assets/fonts/Outfit-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Outfit-Bold.ttf
+  #         weight: 700
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Inter-SemiBold.ttf
+  #         weight: 600
